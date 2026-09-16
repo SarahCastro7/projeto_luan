@@ -59,12 +59,12 @@
 
                 <div class="form-grid">
                     <div>
-                        <label id="activity-type">Tipo da atividade</label>
+                        <label for="activity-type">Tipo da atividade</label>
                         <select id="activity-type">
                             <option value="">Selecione</option>
-                            <option value="">bicicleta</option>
-                            <option value="">caminhada</option>
-                            <option value="">transporte_publico</option>
+                            <option value="bicicleta">bicicleta</option>
+                            <option value="caminhada">caminhada</option>
+                            <option value="transporte_publico">transporte_publico</option>
 
                         </select>
                         <small class="error" id="error-type"></small>
@@ -85,10 +85,10 @@
                 <button id="create-activity" class="btn-dark">Criar atividade</button>
             </section>
             <section id="activities-list" class="activities">
-                ESTA ÉA AREA ONDE VAI FICAR A LISTA DE ATIVIDADES PUBLICADAS
+                <!-- lista de atividades publicadas será renderizada aqui via JS -->
             </section>
             <div id="pagination" class="pagination">
-                <h1>que?</h1>
+                <!-- botões de paginação serão renderizados aqui via JS -->
             </div>
         </main>
     </div>
@@ -119,15 +119,14 @@
             </div>
 
         </div>
+    </div>
 
-
-
-        <template id="activity-card-template">
+    <template id="activity-card-template">
             <article class="activity-card">
 
                 <div class="activity-header">
                     <!-- !!! por enquanto é para ficar vazio -->
-                    <h3 class="activity-tab"></h3>
+                    <h3 class="activity-title"></h3>
                     <time datetime="activity-date"></time>
                 </div>
 

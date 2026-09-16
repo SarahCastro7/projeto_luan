@@ -152,7 +152,7 @@ body {
     background-color: var(--active);
 }
 
-.filter button:disabled {
+.filters button:disabled {
     opacity: 0.4;
     cursor: not-allowed;
 }
@@ -188,11 +188,13 @@ body {
 
 .activities {
     margin-top: 8px;
-    grid-gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .activity-card {
-    border: #fff;
+    border: 1px solid #fff;
 }
 
 .activity-header {
@@ -206,7 +208,8 @@ body {
 }
 
 .activity-body {
-    grid-column: 90px 1fr 140px;
+    display: grid;
+    grid-template-columns: 90px 1fr 140px;
     gap: 10px;
     padding: 8px;
     align-items: center;
@@ -254,7 +257,7 @@ body {
 .comment-box {
     border-top: 1px solid #999;
     padding: 8px;
-    display: flexbox;
+    display: flex;
     gap: 8px;
     align-items: center;
 }

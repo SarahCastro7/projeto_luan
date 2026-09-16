@@ -15,7 +15,6 @@
 
 <body>
     <div class="app">
-        <!-- aside -->
         <aside class="sidebar">
             <div class="profile-card">
                 <img id="company-logo" class="avatar" src="#" alt="Logo EcoMove">
@@ -122,49 +121,49 @@
     </div>
 
     <template id="activity-card-template">
-            <article class="activity-card">
+        <article class="activity-card">
 
-                <div class="activity-header">
-                    <!-- !!! por enquanto é para ficar vazio -->
-                    <h3 class="activity-title"></h3>
-                    <time datetime="activity-date"></time>
-                </div>
+            <div class="activity-header">
+                <!-- !!! por enquanto é para ficar vazio -->
+                <h3 class="activity-title"></h3>
+                <time datetime="activity-date"></time>
+            </div>
 
-                <div class="activity-body">
+            <div class="activity-body">
 
-                    <img class="activity-avatar" alt="Foto do usuário" />
+                <img class="activity-avatar" alt="Foto do usuário" />
 
-                    <div>
-                        <strong class="activity-user"></strong>
+                <div>
+                    <strong class="activity-user"></strong>
 
-                        <div class="metrics">
-                            <!-- MÉTRICA 1 (pronta — use como modelo) -->
-                            <p><span class="distance"></span><small>Distância</small></p>
-                            <p><span class="duration"></span><small>Duração</small></p>
-                            <p><span class="co2"></span><small>CO₂ evitado</small></p>
+                    <div class="metrics">
+                        <!-- MÉTRICA 1 (pronta — use como modelo) -->
+                        <p><span class="distance"></span><small>Distância</small></p>
+                        <p><span class="duration"></span><small>Duração</small></p>
+                        <p><span class="co2"></span><small>CO₂ evitado</small></p>
 
-                        </div>
                     </div>
-
-                    <div class="actions">
-
-                        <button class="like-btn">♡</button>
-                        <span class="likes-count">0</span>
-                        <button class="comment-btn">💬</button>
-                        <span class="comments-count">0</span>
-                    </div>
-
                 </div>
 
-                <div class="comment-box hidden">
+                <div class="actions">
 
-                    <input class="comment-input" placeholder="Escreva um comentario..">
-                    <button class="send-comment">Enviar</button>
-                    <small class="error">Erro</small>
+                    <button class="like-btn">♡</button>
+                    <span class="likes-count">0</span>
+                    <button class="comment-btn">💬</button>
+                    <span class="comments-count">0</span>
                 </div>
 
-            </article>
-        </template>
+            </div>
+
+            <div class="comment-box hidden">
+
+                <input class="comment-input" placeholder="Escreva um comentario..">
+                <button class="send-comment">Enviar</button>
+                <small class="error">Erro</small>
+            </div>
+
+        </article>
+    </template>
 </body>
 
 </html>
